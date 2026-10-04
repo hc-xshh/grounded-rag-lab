@@ -49,7 +49,8 @@ must be refused** - reproducible with `make eval`:
 
 `docs/index.html` is a generated, self-contained report: headline metrics, the
 per-question traces, the retrieved passages and the guardrail log, with no CDN,
-no framework and no network access.
+no framework and no network access. It is published at
+**https://hc-xshh.github.io/grounded-rag-lab/**.
 
 ## Quickstart
 
