@@ -1,0 +1,34 @@
+{"id": "plans-growth-price", "question": "How much does the Growth plan cost per month and how many seats are included?", "answerable": true, "expected_doc_ids": ["subscription-plans"], "expected_facts": ["$199 per month", "10"]}
+{"id": "plans-scale-overage", "question": "What is the overage price for extra API calls on the Scale plan?", "answerable": true, "expected_doc_ids": ["subscription-plans"], "expected_facts": ["$0.25 per 1,000 calls"]}
+{"id": "plans-trial", "question": "How long is the free trial and does it require a credit card?", "answerable": true, "expected_doc_ids": ["subscription-plans"], "expected_facts": ["14-day free trial", "does not require a payment card"]}
+{"id": "plans-annual-discount", "question": "What discount does annual billing give compared with paying monthly?", "answerable": true, "expected_doc_ids": ["subscription-plans"], "expected_facts": ["two months free", "16% discount"]}
+{"id": "plans-downgrade-timing", "question": "When does a plan downgrade take effect?", "answerable": true, "expected_doc_ids": ["subscription-plans"], "expected_facts": ["start of the next billing period"]}
+{"id": "plans-seat-proration", "question": "Are added seats prorated or charged in full?", "answerable": true, "expected_doc_ids": ["subscription-plans"], "expected_facts": ["prorated to the day"]}
+{"id": "billing-invoice-schedule", "question": "When are invoices issued and when are they due?", "answerable": true, "expected_doc_ids": ["invoices-payments-tax"], "expected_facts": ["first day of each billing period", "due within 14 days"]}
+{"id": "billing-cards", "question": "Which credit cards are accepted for payment?", "answerable": true, "expected_doc_ids": ["invoices-payments-tax"], "expected_facts": ["Visa", "Mastercard", "American Express"]}
+{"id": "billing-monthly-refund", "question": "What is the refund window for a monthly subscription?", "answerable": true, "expected_doc_ids": ["invoices-payments-tax"], "expected_facts": ["30 days of the charge"]}
+{"id": "billing-paused-workspace", "question": "How long is a paused workspace kept before the data is deleted?", "answerable": true, "expected_doc_ids": ["invoices-payments-tax"], "expected_facts": ["60 days"]}
+{"id": "billing-gst-countries", "question": "In which countries is GST collected?", "answerable": true, "expected_doc_ids": ["invoices-payments-tax"], "expected_facts": ["Australia", "India", "Singapore"]}
+{"id": "billing-failed-payment-retries", "question": "When does the system retry a failed payment charge?", "answerable": true, "expected_doc_ids": ["invoices-payments-tax"], "expected_facts": ["day 3", "day 7"]}
+{"id": "api-growth-rate-limit", "question": "What is the API rate limit on the Growth plan?", "answerable": true, "expected_doc_ids": ["rate-limits-and-errors"], "expected_facts": ["300 requests per minute"]}
+{"id": "api-429-handling", "question": "How should a client respond to an HTTP 429 rate limited error?", "answerable": true, "expected_doc_ids": ["rate-limits-and-errors"], "expected_facts": ["Retry-After"]}
+{"id": "api-idempotency", "question": "How long is an idempotency key remembered for POST requests?", "answerable": true, "expected_doc_ids": ["rate-limits-and-errors"], "expected_facts": ["24 hours"]}
+{"id": "api-retry-attempts", "question": "How many retry attempts are recommended for 5xx responses?", "answerable": true, "expected_doc_ids": ["rate-limits-and-errors"], "expected_facts": ["3 attempts"]}
+{"id": "api-pagination-cursor", "question": "How long is a pagination cursor valid?", "answerable": true, "expected_doc_ids": ["rate-limits-and-errors"], "expected_facts": ["15 minutes"]}
+{"id": "security-sso-plans", "question": "Which plans support SAML single sign-on?", "answerable": true, "expected_doc_ids": ["sso-and-data-retention"], "expected_facts": ["Growth and Scale"]}
+{"id": "security-audit-log-retention", "question": "How long are audit logs retained?", "answerable": true, "expected_doc_ids": ["sso-and-data-retention"], "expected_facts": ["24 months"]}
+{"id": "security-key-rotation", "question": "How often are encryption keys rotated?", "answerable": true, "expected_doc_ids": ["sso-and-data-retention"], "expected_facts": ["12 months"]}
+{"id": "security-session-timeout", "question": "How long does a user session last before it expires?", "answerable": true, "expected_doc_ids": ["sso-and-data-retention"], "expected_facts": ["12 hours of inactivity"]}
+{"id": "security-deletion-window", "question": "How long does a data deletion request take to process?", "answerable": true, "expected_doc_ids": ["sso-and-data-retention"], "expected_facts": ["within 30 days"]}
+{"id": "support-p1-response", "question": "What is the first response target for a P1 critical incident?", "answerable": true, "expected_doc_ids": ["severity-and-escalation"], "expected_facts": ["1 hour", "24/7"]}
+{"id": "support-p1-escalation", "question": "When is a P1 incident escalated to the on-call engineer?", "answerable": true, "expected_doc_ids": ["severity-and-escalation"], "expected_facts": ["2 hours"]}
+{"id": "support-status-page", "question": "How often is the status page updated during an incident?", "answerable": true, "expected_doc_ids": ["severity-and-escalation"], "expected_facts": ["every 30 minutes"]}
+{"id": "support-p3-target", "question": "What is the response target for a P3 request?", "answerable": true, "expected_doc_ids": ["severity-and-escalation"], "expected_facts": ["1 business day"]}
+{"id": "support-scale-tam", "question": "Which plan includes a named technical account manager?", "answerable": true, "expected_doc_ids": ["severity-and-escalation"], "expected_facts": ["Scale plan customers"]}
+{"id": "gap-uptime-credits", "question": "How much service credit do we receive if monthly uptime falls below 99.9 percent?", "answerable": false, "note": "The corpus states response targets only; no uptime credits or SLA terms exist."}
+{"id": "gap-mobile-app", "question": "Is there a mobile app for iOS and Android?", "answerable": false, "note": "No mobile application is mentioned anywhere in the corpus."}
+{"id": "gap-currency-jpy", "question": "Can we pay in Japanese yen?", "answerable": false, "note": "Only card, SEPA (EUR), ACH (USD) and bank wire are documented."}
+{"id": "gap-headcount", "question": "How many employees work at the company?", "answerable": false, "note": "Company size is never stated."}
+{"id": "gap-sdks", "question": "Which programming languages have official client SDKs?", "answerable": false, "note": "SDKs are not documented in this corpus."}
+{"id": "gap-soc2", "question": "Can I download the SOC 2 Type II report from the trust center?", "answerable": false, "note": "Encryption is documented, but no certifications or trust center exist in the corpus."}
+{"id": "gap-attachment-size", "question": "What is the maximum size for a file attachment upload?", "answerable": false, "note": "Attachment limits are not documented."}
